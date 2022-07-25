@@ -1,0 +1,81 @@
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 85vh;
+  object-fit: contain;
+  z-index: -1000;
+}
+
+.swiper-slide {
+  background-position: auto;
+  background-size: contain;
+  object-fit: contain;
+  z-index: -1000;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1000;
+}
+
+@media screen and (max-width: 1000px) {
+    .swiper {
+        height: 60vh;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: inherit;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .swiper {
+        height: 40vh;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: inherit;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .swiper {
+        height: 30vh;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: inherit;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .swiper {
+        height: 25vh;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: inherit;
+    }
+}
